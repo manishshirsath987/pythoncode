@@ -15,5 +15,8 @@ df=spark.read.format("CSV").option("header","true").option("delimiter",",")\
     .schema(schema).option("columnNameOfCorruptRecord","__corrup_records")\
     .option("mode","PERMISSIVE").load("D:/emp4.csv")
 
+#added comment
+df.show()
+
 df.printSchema()
 df.show()
